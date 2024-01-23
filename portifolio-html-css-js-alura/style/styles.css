@@ -1,0 +1,157 @@
+
+/* variaveis */
+
+:root {
+    --color-primaria: #000000;
+    --color-segundaria:#f6f6f6;
+    --color-terciaria:#22d4fd;
+    --color-button:#272727;
+
+    --font-primaria:"Roboto", sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-primaria);
+    font-family:var(--font-primaria);
+    color:var(--color-segundaria);
+}
+
+body {
+   
+    box-sizing: border-box;
+}
+
+header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header-nav {
+    display: flex;
+    gap: 5rem;
+}
+
+.nav-a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-terciaria);
+}
+
+.titulo-destaque {
+    color: var(--color-terciaria);
+    
+}
+
+.container-pai {
+    
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.container-filho {
+    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;       
+    
+}
+
+.rede-logo {
+    border-radius: 80%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.container-filho-titulo {
+    font-size: 2rem;
+   
+
+}
+
+.container-filho-subTitulo {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container-filho-paragrafo {
+    font-size: 1.5rem;
+   
+} 
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+
+}
+
+.button-links:hover {
+    background-color: var(--color-button);
+
+}
+
+
+
+.button-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.625rem;
+    border: 0.063rem solid var(--color-terciaria);    
+    width: 50%;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--color-segundaria);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1.313rem 0;
+}
+
+
+.img-principal {
+  width: 50%;
+}
+    
+
+footer {
+    padding: 1.5rem;
+    color: var(--color-button);
+    background-color: var(--color-terciaria);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+@media (max-width: 940px) {
+
+    .header-nav {
+        padding: 10% 20%; 
+        /* justify-content: center; */
+        gap: 1.5rem;
+        font-size: 1rem;
+    
+    }
+
+    .container-pai {
+        flex-direction: column-reverse;
+        padding: 5%;
+
+
+    }
+
+    .container-filho {
+        width: auto;
+    }
+}
+
